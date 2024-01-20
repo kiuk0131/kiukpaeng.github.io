@@ -1,0 +1,113 @@
+---
+title: "Future Sales Prediction"
+author: "Kiuk Paeng"
+date: "2024-01-03"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# Introduction 
+
+
+```{r}
+library('fpp3')
+library(tsibble)
+library(dplyr)
+library(forecast)
+library(ggplot2)
+```
+
+
+
+
+Salesd dataset is provided by the Kaggle for the competition. Data fields are defined as below. 
+
+ID - an Id that represents a (Shop, Item) tuple within the test set
+shop_id - unique identifier of a shop
+item_id - unique identifier of a product
+item_category_id - unique identifier of item category
+item_cnt_day - number of products sold. You are predicting a monthly amount of this measure
+item_price - current price of an item
+date - date in format dd/mm/yyyy
+date_block_num - a consecutive month number, used for convenience. January 2013 is 0, February 2013 is 1,..., October 2015 is 33
+item_name - name of item
+shop_name - name of shop
+item_category_name - name of item category
+
+
+```{r}
+sales <- read.csv('/Users/kiukpaeng/Documents/1_Data Science/1. Personal Projects/predict-future-sales/sales_train.csv')
+```
+
+Let's review the first 6 row of the datset. 
+```{r}
+head(sales)
+```
+
+Let review some summary statistics for the data set
+```{r}
+summary(sales)
+```
+
+For the purpose of demonstrating the sales pattern and forecasting future sales, the original data is first grouped by sales data. Then, the number of items sold is summed as shown below. 
+
+```{r}
+sales_tsibble <- sales %>% 
+  group_by(date_block_num) %>% 
+  summarise(sales = sum(item_cnt_day)) %>% 
+  as_tsibble(index = date_block_num)
+```
+
+
+```{r}
+head(sales_tsibble)
+```
+```{r}
+sales_tsibble_t <- sales_tsibble %>% 
+  mutate(`5-MA` = slider::slide_dbl(sales, mean,.before = 4, .after = 2, .complete = TRUE))
+```
+
+
+### Moving Average Smoothing
+In order to identify the trend, let's use the simple moving average moving smoothing. A moving average of order 5 is used. 
+
+```{r}
+head(sales_tsibble_t)
+```
+We can observe that the trend-cycle (in blue) is smoother than the original data. It effectively captures the primary movement of the time series while filtering out the fluctuations. It is shown that the sales is on down trend with some fluctuation.  
+
+```{r}
+ggplot(data = sales_tsibble_t, mapping = aes(x = date_block_num)) +
+  geom_line(aes(y = sales)) +
+  geom_line(aes(y = `5-MA`), color = "blue")
+```
+
+
+
+### STL (Seasonal and Trend decomposition using Loess)
+By employing time series decomposition, we can examine the components of the time series. As shown below  it identifies a downtrend, and the remainder behaves like white noise, displaying no discernible patterns or trends. It is deemed that there is no strong seaonality in the time serise. 
+
+```{r}
+sales_tsibble_t %>%
+  model(stl = STL(sales)) %>%
+  components() %>%
+  autoplot()
+```
+
+```{r}
+sales_tsibble%>%
+  model(RW(sales ~ drift()),
+         Mean = MEAN(sales),
+        `Naïve` =  NAIVE(sales)) %>%
+  forecast(h = 5) %>%
+  autoplot(sales_tsibble)
+```
+
+
+
+
