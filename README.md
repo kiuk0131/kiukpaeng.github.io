@@ -3,8 +3,8 @@
 #### Technical Skills: R, Python, SQL
 
 ## Education	       		
-- M.S., Information Management, Data Science | The University of Washington, Information Schoo at Seattle (_December 2023_)	 			        		
-- B.S.,  Business, Logistics Management | The Ohio State University, Max M. Fisher College of Business at Columbus (_May 2014_)
+- M.S., Information Management, Data Science | The University of Washington at Seattle (_December 2023_)	 			        		
+- B.S.,  Business, Logistics Management | The Ohio State University at Columbus (_May 2014_)
 
 ## Work Experience
 **Procurement Agent @ The Boeing Company  (_March 2019 - Present_)**
@@ -14,11 +14,13 @@
 - Exhibit the exceptional ability to set the accurate target price even when internal pricing data is limited by collaborating with engineering and and performing price analysis using various tools such as Steffenson Price analysis, Average Labor Warp Rate. Consistently achieve the target price and beyond through negotiation and help program to save the budget for the research and development efforts. 
 
 **Cargo Operation Agent @ Asiana Airlines (_February 2017 – Feb 2019_)**
-- In charge of AOG operation for Boeing 747 freighter and 777 passenger. Ensured spare parts delivery on airplane, managing ramp operation, coordinating with mechanics, crew and Air Route Traffic Control Center, communicating the installation process and reporting to the hub station in S.Korea.
-- Collected and analyzed actual cargo weight and chargeable weight and identified the weight discrepancy. Negotiated the discrepancy with business partners and increased sales revenue. 
-- Led continuous improvement project by performing operational audit and root cause analysis for airport ramp operation. Identified security and performance non-conformities. Implemented corrective operation procedure and improve on-time departure for Boeing 747 cargo aircraft. 
-- Developed MS Excel-based aircraft space control template for new employees and expedited the learning curve. 
 - Extracted large data from Airline ERP system and analyzed air traffic data to calculate revenue based on aircraft  types and provide monthly report to leadership to communicate the cargo, passenger sales trend. 
+- In charge of AOG operation for Boeing 747 freighter and 777 passenger. Ensured spare parts delivery on airplane, managing ramp operation, coordinating with mechanics, crew and Air Route Traffic Control Center, communicating the installation process and reporting to the hub station in S.Korea.
+- Developed MS Excel-based aircraft space control template for new employees and expedited the learning curve. 
+
+**Global Purchasing Intern  	 @ General Motors (_July 2013 – August 2013_)**
+ - Conducted trend analysis of warranty expenses and identified  2nd tier suppliers exhibiting an increasing trend of defective parts as the root cause.
+ - Monitored the performance of 2nd tier suppliers and conducted on-site visits to address the downtrend in their  performance. 
 
 ## Projects
 ### Future Sales Prediction
