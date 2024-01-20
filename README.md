@@ -3,18 +3,17 @@
 #### Technical Skills: R, Python, SQL
 
 ## Education	       		
-- M.S., Physics	| The University of Texas at Dallas (_December 2019_)	 			        		
-- B.S., Physics | The University of Texas at Dallas (_May 2017_)
+- M.S., Information Management, Data Science | The University of Washington, Information Schoo at Seattle (_December 2023_)	 			        		
+- B.S.,  Business, Logistics Management | The Ohio State University, Max M. Fisher College of Business at Columbus (_May 2014_)
 
 ## Work Experience
 **Procurement Agent @ The Boeing Company  (_March 2019 - Present_)**
 - Extract and analyze Boeing internal and external data from various sources including procurement/contract system, IBI Cognos, SAP and Request for Proposals to develop and execute a complete procurement strategy, starting from market research, solicitation, price analysis, performance analysis, terms and condition negotiation, price negation, post contract management up to the final delivery of product to customers. 
 - Retrieve data from the ERP system to identify critical parts with a high risk of late delivery. Collaborate with operations counterparts to address and resolve delivery issues promptly. Deliver a weekly report to the leadership team summarizing the status and actions taken to ensure timely deliveries.
-- Create strategic contract to capture the potential options to buy by coordinating with internal customers and suppliers and lock the beset price for future demand. 
 - Navigate multiple ERP systems to identify upcoming order requests and aggregate the demand to build procurement package that can deliver the best pricing, quality and lead time to customers.
-- Accurately capture all compliance requirements for government and commercial contract with high complexity and visibility. Document and obtain approvals from leaderships through presentation and formal procedure.  
 - Exhibit the exceptional ability to set the accurate target price even when internal pricing data is limited by collaborating with engineering and and performing price analysis using various tools such as Steffenson Price analysis, Average Labor Warp Rate. Consistently achieve the target price and beyond through negotiation and help program to save the budget for the research and development efforts. 
-**Cargo Operation Agent @ Asiana Airlines (_February 2017 – Feb 2019 _)**
+
+**Cargo Operation Agent @ Asiana Airlines (_February 2017 – Feb 2019_)**
 - In charge of AOG operation for Boeing 747 freighter and 777 passenger. Ensured spare parts delivery on airplane, managing ramp operation, coordinating with mechanics, crew and Air Route Traffic Control Center, communicating the installation process and reporting to the hub station in S.Korea.
 - Collected and analyzed actual cargo weight and chargeable weight and identified the weight discrepancy. Negotiated the discrepancy with business partners and increased sales revenue. 
 - Led continuous improvement project by performing operational audit and root cause analysis for airport ramp operation. Identified security and performance non-conformities. Implemented corrective operation procedure and improve on-time departure for Boeing 747 cargo aircraft. 
@@ -36,6 +35,4 @@
 
 
 ## Publications
-
-
 - [Data Science Blog](https://medium.com/@kiuk0131)
