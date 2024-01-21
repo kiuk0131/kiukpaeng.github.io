@@ -1,4 +1,5 @@
-# Data Science Portfolio
+Hllo, My name is Kiuk Paeng. I am supply chain professonial with strong passion in data science. <br>
+I want to sovle supply chain problem with data science.
 
 ## Projects
 ### Future Sales Prediction
